@@ -539,7 +539,7 @@ The "FlySim" folder in the Cloud City download contains a Universal Windows Plat
 
 	![Using statements](Images/using-statements.png)
 
-1. Open **MainViewModel.cs** in the project's "ViewModels" folder and the following ```using``` statement to those at the top of the file:
+1. Open **MainViewModel.cs** in the project's "ViewModels" folder and add the following ```using``` statement to those at the top of the file:
 
 	```C#
 	using FlySim.Listeners;
