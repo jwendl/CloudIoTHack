@@ -129,6 +129,11 @@ In Lab 3, the instructor created an Event Hub and configured Stream Analytics to
 	public static string SharedAirTrafficEventHubEndpoint = "SHARED_EVENT_HUB_ENDPOINT";
     public static string SharedAirTrafficHubName = "flysim-shared-output-hub";
 	```
+
+	The code should look like the following screenshot:
+
+	![Common code](Images/code-common.png)
+
 1. Return to the gist that you opened in the previous exercise and copy the connection string to the clipboard again.
 
 	![Copying the connection string to the clipboard](Images/copy-from-gist.png)

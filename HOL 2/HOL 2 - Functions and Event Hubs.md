@@ -287,6 +287,14 @@ You can write Azure Functions in the Azure Portal, or you can write them in Visu
 	}
 	```
 
+	When you coplete this section, the json should look similar to the information below:
+
+	![Example json](Images/connection-string-json.png)
+
+	The end of your connection strings should look similar to:
+
+	![Example of ending of json](Images/connection-string-json-end.png)
+
 	This file contains three values that must be updated before you build and test your Function:
 
 	- **IoTHubConnection** - Connection string for the IoT Hub created in the previous lab
@@ -527,6 +535,10 @@ The "FlySim" folder in the Cloud City download contains a Universal Windows Plat
 
 	 ```EventHubClient```, ```EventHubReceiver```, and other classes used here come from a popular NuGet package named [AzureSBLite](https://github.com/ppatierno/azuresblite). These classes make it extremely easy to connect to Azure Event Hubs and receive events from them asynchronously. The call to ```EventHubReceiver.Receive``` is performed on a background thread, and it blocks until a message arrives at the Event Hub. After the message is retrieved and deserialized, it is passed to ```UpdateFlightinformation```, which uses ```Dispatcher.RunAsync``` to marshal back to the UI thread and update the UI.
 
+	The code should look like the following screenshot:
+
+	![Using statements](Images/using-statements.png)
+
 1. Open **MainViewModel.cs** in the project's "ViewModels" folder and the following ```using``` statement to those at the top of the file:
 
 	```C#
@@ -546,6 +558,10 @@ The "FlySim" folder in the Cloud City download contains a Universal Windows Plat
 	```C#
 	FlightActivityListener.StartListeningAsync(CurrentFlightInformation, ActivePlanes);
 	```
+
+	The code should look like the following screenshot:
+
+	![Start listening code](Images/start-listening-async.png)
 
 1. Save your changes and build the solution to make sure it builds successfully.
 
